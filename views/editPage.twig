@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Edit a message</h1>
+    <form action="/updateMessagePage" method="POST">
+        <label for="">Pseudo</label>
+        <input type="text" name="pseudo" value="{{message.pseudo}}" id="pseudo" placeholder="Enter your Pseudo">
+        <label for="">Content</label>
+        <input type="text" name="content"  value="{{message.content}}"  id="content" placeholder="Enter your Message content">
+        <input type="text" name="id" hidden value="{{message._id}}"  id="content" placeholder="Enter your Message content">
+        <input type="submit" value="Update" >
+    </form>
+    <script>
+    </script>
+</body>
+</html>
